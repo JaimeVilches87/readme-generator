@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JaimeVilches87/readme-generator/issues"
   },
-  "homepage": "https://github.com/JaimeVilches87/readme-generator#readme"
+  "homepage": "https://github.com/JaimeVilches87/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.1"
+  }
 }
