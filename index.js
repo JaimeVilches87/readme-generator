@@ -24,7 +24,7 @@ const questions = () => {
             type: 'input',
             name: 'install',
             message: 'Enter installation instruction for your project.',
-        }
+        },
         {
             type: 'input',
             name: 'usage',
@@ -62,10 +62,27 @@ const questions = () => {
 };
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            return console.log(err);
+        }
+        console.log('Success')
+    });
+}
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() {
+    console.log('Welcome to the README.md generator');
+    try {
+        const answers = await userQuestions(); //once user prompts are finished then retuen answers to answers array
+        const md = generateMarkdown(answers);  //call the function in generateMarkdoen.js file to create the markdown for the readme
+        writeToFile('README.md', md);  //call the writeToFile function and pass it the name 'README.MD' and the completed markdown
+    } catch (err) {
+        console.log(err);
+        console.log('There was an error with user input');
+    }
+};
 
 // Function call to initialize app
 init();
