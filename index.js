@@ -2,9 +2,9 @@
 // TODO: Include packages needed for this application
 var inquirer = require('inquirer');
 const fs = require('fs');
-var util = require('util');
+// var util = require('util');
 var generateMarkdown = require("./utils/generateMarkdown");
-const { type } = require('os');
+
 
 
 // TODO: Create an array of questions for user input
@@ -75,7 +75,7 @@ function writeToFile(fileName, data) {
 function init() {
     console.log('Welcome to the README.md generator');
     try {
-        const answers = await userQuestions(); //once user prompts are finished then retuen answers to answers array
+        const answers = await questions(); //once user prompts are finished then retuen answers to answers array
         const md = generateMarkdown(answers);  //call the function in generateMarkdoen.js file to create the markdown for the readme
         writeToFile('README.md', md);  //call the writeToFile function and pass it the name 'README.MD' and the completed markdown
     } catch (err) {

@@ -17,20 +17,67 @@ const findLicense = (license) => {
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) { }
+function renderLicenseBadge(license) {
+  let lic = findLicense(license);
+  return lic ? `![license](https://img.shields.io/static/v1?label=license&message=${lic.abbr}&color=brightgreen)` : '';
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { }
+function renderLicenseLink(license) {
+  let lic = findLicense(license);
+  return lic ? lic.url : '';
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) { }
+function renderLicenseSection(license) {
+  let lic = findLicense(license);
+  return lic ? `Licensed under ${lic.name}` : '';
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  const licenseLink = renderLicenseLink(data.license);
+  const licenseBadge = renderLicenseBadge(data.license);
+  const licenseSection = renderLicenseSection(data.license);
+
   return `# ${data.title}
-`;
+
+  ${licenseBadge}
+ 
+ ## Description
+ ${data.description}
+ 
+ ## Table of Contents
+ 
+ * [Installation](#installation)
+ * [Usage](#usage)
+ * [Contributing](#Contributing)
+ * [Tests](#Tests)
+ * [License](#License)
+ * [Questions](#Questions)
+ 
+ ## Installation
+ ${data.install}
+ 
+ ## Usage
+ ${data.usage}
+ 
+ ## Contributing
+ ${data.description}
+ 
+ ## Tests
+ ${data.contrib}
+ 
+ ## License
+${licenseSection}
+${licenseLink}
+ 
+ ## Questions
+ You can view my GitHub profile at https://github.com/${data.gitHub}
+ 
+ If you have additonal queations you can email me at ${data.email} `;
 }
 
 module.exports = generateMarkdown;
