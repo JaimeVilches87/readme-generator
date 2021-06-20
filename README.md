@@ -1,36 +1,42 @@
-# ReadMe Generator
+# README GENERATOR:
 
-  ![license](https://img.shields.io/static/v1?label=license&message=Mozilla&color=brightgreen)
- 
- ## Description
- Application used to assist in making of ReadMe files
- 
- ## Table of Contents
- 
- * [Installation](#installation)
- * [Usage](#usage)
- * [Contributing](#Contributing)
- * [Tests](#Tests)
- * [License](#License)
- * [Questions](#Questions)
- 
- ## Installation
- Need to install node, fs, util
- 
- ## Usage
- for ReadMe files
- 
- ## Contributing
- Application used to assist in making of ReadMe files
- 
- ## Tests
- Jaime Vilches
- 
- ## License
-Licensed under Mozilla Public License 2.0
-https://opensource.org/licenses/MPL-2.0
- 
- ## Questions
- You can view my GitHub profile at https://github.com/JaimeVilches87
- 
- If you have additonal queations you can email me at JaimeVilches87@gmail.com 
+1. [ Description. ](#desc)
+2. [ Web Address. ](#web-address)
+3. [ Usage tips. ](#usage)
+4. [ Questions. ](#questions)
+
+<a name="desc"></a>
+## 1. DESCRIPTION
+
+This application is a READEME Generator wich helps the user create an organized README file. 
+This is a command line application that runs on Node.js and uses Javascript, Inquirer and fs.
+
+<a name="web-address"></a>
+## 2. How to Get There
+
+Open your favorite web browser and enter the following web address to access.
+
+http://jaimevilches87.github.io/readme-generator/
+
+<a name="usage"></a>
+## 3. Usage Tips
+
+Start by running node on command line
+![node-page](./assets/media/node.jpg)
+
+Answer questions to input name, description, installations, etc...
+![data-page](./assets/media/description.jpg)
+
+Choose license from choices provided
+![license-page](./assets/media/license.jpg)
+
+Testing the application
+![Gif demo](./assets/media/demo.gif)
+
+
+<a name="questions"></a>
+## 4. Questions
+
+Any questions feel free to reach out to me!
+
+Email: JaimeVilches87@gmail.com

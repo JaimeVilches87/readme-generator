@@ -82,7 +82,7 @@ const init = async () => {
     try {
         const answers = await questions(); //once user prompts are finished then return answers to answers array
         const md = generateMarkdown(answers);  //call the function in generateMarkdoen.js file to create the markdown for the readme
-        writeToFile('README.md', md);  //call the writeToFile function and pass it the name 'README.MD' and the completed markdown
+        writeToFile('READMESample.md', md);  //call the writeToFile function and pass it the name 'README.MD' and the completed markdown
     } catch (err) {
         console.log(err);
         console.log('There was an error with user input');
