@@ -1,9 +1,9 @@
-# wuwieuwbuewiuef
+# ReadMe Generator
 
-  ![license](https://img.shields.io/static/v1?label=license&message=Apache&color=brightgreen)
+  ![license](https://img.shields.io/static/v1?label=license&message=Mozilla&color=brightgreen)
  
  ## Description
- iwuenuwnf
+ Application used to assist in making of ReadMe files
  
  ## Table of Contents
  
@@ -15,22 +15,22 @@
  * [Questions](#Questions)
  
  ## Installation
- weufnwuef
+ Need to install node, fs, util
  
  ## Usage
- woiuenfwo
+ for ReadMe files
  
  ## Contributing
- iwuenuwnf
+ Application used to assist in making of ReadMe files
  
  ## Tests
- ouwneownef
+ Jaime Vilches
  
  ## License
-Licensed under Apache License 2.0
-https://opensource.org/licenses/Apache-2.0
+Licensed under Mozilla Public License 2.0
+https://opensource.org/licenses/MPL-2.0
  
  ## Questions
- You can view my GitHub profile at https://github.com/iwneinw
+ You can view my GitHub profile at https://github.com/JaimeVilches87
  
- If you have additonal queations you can email me at uwon 
+ If you have additonal queations you can email me at JaimeVilches87@gmail.com 
