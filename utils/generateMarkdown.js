@@ -1,4 +1,5 @@
-const licenses = [  //license array to build the badge icon
+//license array to build the badge icon
+const licenses = [  
   { name: 'Apache License 2.0', abbr: 'Apache', url: 'https://opensource.org/licenses/Apache-2.0' },
   { name: 'GNU General Public License (GPL)', abbr: 'GNU', url: 'GNU General Public License (GPL)' },
   { name: 'MIT license', abbr: 'MIT', url: 'https://opensource.org/licenses/MIT' },
