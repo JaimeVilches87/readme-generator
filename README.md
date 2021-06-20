@@ -16,7 +16,7 @@ This is a command line application that runs on Node.js and uses Javascript, Inq
 
 Open your favorite web browser and enter the following web address to access.
 
-http://jaimevilches87.github.io/readme-generator/
+git@github.com:JaimeVilches87/readme-generator.git
 
 <a name="usage"></a>
 ## 3. Usage Tips
@@ -30,7 +30,7 @@ Answer questions to input name, description, installations, etc...
 Choose license from choices provided
 ![license-page](./assets/media/license.jpg)
 
-Testing the application
+Testing the application <br>
 ![Gif demo](./assets/media/demo.gif)
 
 
